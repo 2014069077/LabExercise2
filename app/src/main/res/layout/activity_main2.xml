@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uy.labexercise2.Main2Activity">
+
+    <Button
+        android:textColor="#f45d74"
+        android:textSize="16dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sharedPreferenes"
+        android:text="LOAD SHARED PREFERENCES"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:onClick="btnclick_sharedPreferencesLoad"
+        />
+
+    <Button
+        android:textColor="#f45d74"
+        android:textSize="16dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_internalStorage"
+        android:layout_marginTop="15dp"
+        android:text="LOAD INTERNAL STORAGE"
+        android:onClick="btnclick_internalStorageLoad"
+        android:layout_below="@+id/btn_sharedPreferenes"
+        android:layout_alignLeft="@+id/btn_sharedPreferenes"
+        android:layout_alignStart="@+id/btn_sharedPreferenes" />
+
+    <Button
+        android:textColor="#f45d74"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_clear"
+        android:layout_alignBaseline="@+id/btn_back"
+        android:layout_alignBottom="@+id/btn_back"
+        android:layout_toStartOf="@+id/btn_back" />
+
+    <Button
+        android:textColor="#f45d74"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:layout_marginTop="31dp"
+        android:id="@+id/btn_back"
+        android:layout_marginRight="40dp"
+        android:layout_alignRight="@id/btn_clear"
+        android:layout_below="@+id/btn_internalStorage"
+        android:layout_alignEnd="@+id/btn_internalStorage" />
+
+    <TextView
+        android:textColor="#f45d74"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display user input"
+        android:id="@+id/tv_display"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/btn_clear"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

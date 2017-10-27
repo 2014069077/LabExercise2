@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uy.labexercise2.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#f45d74"
+        android:text="USER:"
+        android:layout_marginTop="75sp"
+        android:layout_marginLeft="50sp"
+        android:layout_alignEnd="@+id/tv_pass"
+        android:layout_alignRight="@+id/tv_pass" />
+
+    <TextView
+        android:id="@+id/tv_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#f45d74"
+        android:text="PASSWORD:"
+        android:layout_below="@+id/tv_user"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="25sp"
+        />
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_user"
+        android:layout_alignBaseline="@+id/tv_user"
+        />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_pass"
+        android:layout_toRightOf="@+id/tv_pass"
+        />
+
+    <Button
+        android:textSize="16dp"
+        android:textColor="#f45d74"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sharedPref"
+        android:text="SHARED PREFERENCES"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_pass"
+        android:layout_marginTop="55sp"
+        android:onClick="btnclick_sharedPreferences"
+        />
+
+    <Button
+        android:textSize="16dp"
+        android:textColor="#f45d74"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_internalStorage"
+        android:text="INTERNAL STORAGE"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_sharedPref"
+        android:layout_marginTop="15sp"
+        android:onClick="btnclick_internalStorage"
+        />
+
+    <Button
+        android:textSize="16dp"
+        android:textColor="#f45d74"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:layout_marginTop="18dp"
+        android:id="@+id/btn_next"
+        android:onClick="btn_next"
+        android:layout_below="@+id/btn_internalStorage"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
+
+
